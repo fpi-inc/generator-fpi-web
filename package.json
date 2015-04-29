@@ -24,7 +24,7 @@
     "chalk": "^1.0.0",
     "fpilogo": "^1.0.0",
     "underscore.string": "^3.0.3",
-    "yeoman-generator": "^0.18.9",
+    "yeoman-generator": "0.18.9",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
