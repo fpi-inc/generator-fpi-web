@@ -1,0 +1,215 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>static-html-page</title>
+    <link rel="stylesheet" href="../assets/css/base.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/table.css" media="screen">
+    <style type="text/css">
+    	body{
+    		padding: 20px;
+    	}
+    	h1{
+    		line-height: 40px;
+    		font-size: 18px;
+    	}
+    </style>
+</head>
+<body>
+	<h1>正常表格</h1>
+	<div class="ui-table-container">
+	    <table class="ui-table"><!-- 可以在class中加入ui-table-inbox或ui-table-noborder分别适应不同的情况 -->
+	        <thead>
+	            <tr>
+	                <th>创建时间</th>
+	                <th>名称<em class="ft-bar">|</em>交易号</th>
+	                <th>对方</th>
+	                <th>金额<em class="ft-bar">|</em>明细</th>
+	                <th>状态</th>
+	                <th>操作</th>
+	                <th>备注</th>
+	            </tr>
+	        </thead><!-- 表头可选 -->
+	        <tbody>
+	            <tr>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	            </tr>
+	            <tr class="ui-table-split">
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	            </tr>
+	            <tr>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	            </tr>
+	            <tr class="ui-table-split">
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	            </tr>
+	            <tr>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	            </tr>
+	        </tbody>
+	        <tfoot>
+	            <tr>
+	                <td colspan="7">表尾数据</td>
+	            </tr>
+	        </tfoot><!-- 表尾可选 -->
+	    </table>
+	</div>
+	<h1>无边框的表格</h1>
+	<table class="ui-table ui-table-noborder">
+	    <tbody>
+	        <tr>
+	            <td>1</td>
+	            <td>聚光科技</td>
+	            <td>
+	                <p>电话：0571-85012188</p>
+	                <p>地址：浙江省杭州市滨江区滨安路760号</p>
+	            </td>
+	            <td>操作</td>
+	        </tr>
+	        <tr class="ui-table-split">
+	            <td>2</td>
+	            <td>聚光科技</td>
+	            <td>
+	                <p>电话：0571-85012188</p>
+	                <p>地址：浙江省杭州市滨江区滨安路760号</p>
+	            </td>
+	            <td>操作</td>
+	        </tr>
+	        <tr>
+	            <td>3</td>
+	            <td>聚光科技</td>
+	            <td>
+	                <p>电话：0571-85012188</p>
+	                <p>地址：浙江省杭州市滨江区滨安路760号</p>
+	            </td>
+	            <td>操作</td>
+	        </tr>
+	        <tr class="ui-table-split">
+	            <td>4</td>
+	            <td>聚光科技</td>
+	            <td>
+	                <p>电话：0571-85012188</p>
+	                <p>地址：浙江省杭州市滨江区滨安路760号</p>
+	            </td>
+	            <td>操作</td>
+	        </tr>
+	    </tbody>
+	</table>
+	<h1>可以嵌在别的框里的表格</h1>
+	<div class="ui-table-container">
+	    <table class="ui-table ui-table-inbox"><!-- 可以在class中加入ui-table-inbox或ui-table-noborder分别适应不同的情况 -->
+	        <thead>
+	            <tr>
+	                <th>创建时间</th>
+	                <th>名称<em class="ft-bar">|</em>交易号</th>
+	                <th>对方</th>
+	                <th>金额<em class="ft-bar">|</em>明细</th>
+	                <th>状态</th>
+	                <th>操作</th>
+	                <th>备注</th>
+	            </tr>
+	        </thead><!-- 表头可选 -->
+	        <tbody>
+	            <tr>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td class="ui-table-action">Data</td>
+	                <td>Data</td>
+	            </tr>
+	            <tr class="ui-table-split">
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td>Data</td>
+	                <td class="ui-table-action">Data</td>
+	                <td>Data</td>
+	            </tr>
+	        </tbody>
+	    </table>
+	</div>
+	<h1>固定布局（不按表格内容设定列宽）</h1>
+	<table class="ui-table ui-table-layout-fixed">
+	    <thead>
+	        <tr>
+	            <th width="10%">创建时间</th>
+	            <th width="20%">名称<em class="ft-bar">|</em>交易号</th>
+	            <th width="20%">对方</th>
+	            <th width="10%">金额<em class="ft-bar">|</em>明细</th>
+	            <th width="10%">状态</th>
+	            <th width="20%">操作</th>
+	            <th width="10%">备注</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr>
+	            <td>looooooooooooooooooong data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	        </tr>
+	    </tbody>
+	</table>
+	<p>非固定布局第一列就被撑宽了。</p>
+	<table class="ui-table">
+	    <thead>
+	        <tr>
+	            <th width="10%">创建时间</th>
+	            <th width="20%">名称<em class="ft-bar">|</em>交易号</th>
+	            <th width="20%">对方</th>
+	            <th width="10%">金额<em class="ft-bar">|</em>明细</th>
+	            <th width="10%">状态</th>
+	            <th width="20%">操作</th>
+	            <th width="10%">备注</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr>
+	            <td>looooooooooooooooooong data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	            <td>Data</td>
+	        </tr>
+	    </tbody>
+	</table>
+</body>
+</html>

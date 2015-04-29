@@ -1,0 +1,23 @@
+{
+  "name": "<%= appname%>",
+  "version": "1.0.0",
+  "description": "<%= appname%>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fpi-inc/<%= appname%>.git"
+  },
+  "author": "pingping_feng@fpi-inc.com",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.2",
+    "gulp-minify-css": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-server-livereload": "^1.2.4"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "generator-fpi-web",
+  "version": "1.0.0",
+  "description": "Website construction",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fpi-inc/generator-fpi-web.git"
+  }
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/fpi-inc/generator-fpi-web"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "fpilogo": "^1.0.0",
+    "underscore.string": "^3.0.3",
+    "yeoman-generator": "^0.18.9",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
